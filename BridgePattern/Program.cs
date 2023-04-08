@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Tv tv = new Tv();
+            RemoteControl remote = new RemoteControl(tv);
+            remote.TogglePower();
+
+            Radio radio = new Radio();
+            AdvancedRemoteControl advRemote = new AdvancedRemoteControl(radio);
         }
     }
 }
